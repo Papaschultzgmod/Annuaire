@@ -35,10 +35,10 @@ CREATE TABLE Particulier(
 CREATE TABLE Entreprise(
         NumSIRET                 Varchar (10) NOT NULL ,
         NomEntreprise            Varchar (50) NOT NULL ,
-        NumTVA                   Int NOT NULL ,
-        NumInscriptionEntreprise Int NOT NULL ,
+        NumTVA                   Varchar (15) NOT NULL ,
+        NumInscriptionEntreprise Varchar (10) NOT NULL ,
         SitesEntreprise          Varchar (50) NOT NULL ,
-        TelephoneEntreprise      Int NOT NULL
+        TelephoneEntreprise      Varchar (20) NOT NULL
 	,CONSTRAINT Entreprise_PK PRIMARY KEY (NumSIRET)
 )ENGINE=InnoDB;
 
@@ -80,7 +80,7 @@ CREATE TABLE Adresses(
         NumRue      Int NOT NULL ,
         Etage       Int NOT NULL ,
         Rue         Varchar (50) NOT NULL ,
-        CodePostale Int NOT NULL ,
+        CodePostale Varchar (5) NOT NULL ,
         Ville       Varchar (50) NOT NULL ,
         TypeAdresse Varchar (10) NOT NULL
 	,CONSTRAINT Adresses_PK PRIMARY KEY (Id)
