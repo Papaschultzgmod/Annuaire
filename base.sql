@@ -9,8 +9,9 @@
 
 CREATE TABLE Administrateur(
         NumAdministrateur         Int  Auto_increment  NOT NULL ,
-        IdentifiantAdministrateur Varchar (50) NOT NULL ,
-        MotDePasseAdministrateur  Varchar (50) NOT NULL
+        MotDePasseAdministrateur  Varchar (50) NOT NULL ,
+        IdentifiantAdministrateur Varchar (50) NOT NULL
+	,CONSTRAINT Administrateur_AK UNIQUE (IdentifiantAdministrateur)
 	,CONSTRAINT Administrateur_PK PRIMARY KEY (NumAdministrateur)
 )ENGINE=InnoDB;
 
