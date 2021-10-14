@@ -10,7 +10,7 @@ INSERT INTO `administrateur` (`NumAdministrateur`, `IdentifiantAdministrateur`, 
 /*Exemple pour une adresse*/
 INSERT INTO `adresses` (`Id`, `NumRue`, `Etage`, `Rue`, `CodePostale`, `Ville`, `TypeAdresse`) VALUES ('1', '12', '2', 'Rue de Champagne', '51100', 'Reims', 'Particulie');
 
-INSERT INTO habiter (ID, NumParticulier) VALUES ('1', '2');
+INSERT INTO `habiter` (`Id`, `NumParticulier`) VALUES ('1', '2');
 
 /*Exemple pour une entreprise*/
 INSERT INTO `entreprise` (`NumSIRET`, `NomEntreprise`, `NumTVA`, `NumInscriptionEntreprise`, `SitesEntreprise`, `TelephoneEntreprise`) VALUES ('6515651651', 'Decomep', '65416', '12253', 'Chalindrey', '0325487654');
